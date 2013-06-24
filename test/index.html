@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Annotorious Parse.com Plugin Test Page</title>
+
+    <!-- Import main Annotorious script and CSS -->
+    <link rel="stylesheet" href="http://annotorious.github.com/latest/annotorious.css" type="text/css" />
+    <script src="http://annotorious.github.com/latest/annotorious.min.js"></script>
+    
+    <!-- Import jQuery - the plugin depends on it! -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Import Parse's javascript sdk - the plugin depends on it! -->
+    <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+    
+    <!-- Import the css styles -->
+    <link rel="stylesheet" href="../anno-parse-plugin.css" type="text/css" /> 
+
+    <!-- Import the plugin script -->
+    <script src="../anno-parse-plugin.js"></script>
+    
+    <!-- Use Annotorious' JavaScript API to attach and activate the plugin -->
+    <script>
+      anno.addPlugin('Parse', { 
+        app_id: 'C2VeYqJ2qdyUM50d4R1VvpBvybHYLoWmcsrY6d0u',
+        js_key: 'OKPb2jZruZOIkfRHnKTOqqV9gP3xdGqgHUUu1tZ4',
+        debug: true
+      });
+    </script>
+    <style>
+      .image-caption {
+        line-height: normal;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="640px-Hallstatt.jpg" class="annotatable">
+      <p class="image-caption">
+        Hallstatt, Austria. By Nick Csakany, 2007. Public Domain. Source:
+        <a href="http://commons.wikimedia.org/wiki/File:Hallstatt_300.jpg">Wikimedia Commons</a>          
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius 
+      diam posuere quam molestie vestibulum. Vestibulum non volutpat elit. Integer 
+      vitae felis eget magna rutrum sagittis. Nulla facilisi. Praesent a consectetur
+      velit. Cras eget nibh est, eu imperdiet mauris. Nulla quis justo urna. Sed eu
+      rutrum mauris. Integer aliquet nulla sit amet ante mollis pellentesque.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius 
+      diam posuere quam molestie vestibulum. Vestibulum non volutpat elit. Integer 
+      vitae felis eget magna rutrum sagittis. Nulla facilisi. Praesent a consectetur
+      velit. Cras eget nibh est, eu imperdiet mauris. Nulla quis justo urna. Sed eu
+      rutrum mauris. Integer aliquet nulla sit amet ante mollis pellentesque.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius 
+      diam posuere quam molestie vestibulum. Vestibulum non volutpat elit. Integer 
+      vitae felis eget magna rutrum sagittis. Nulla facilisi. Praesent a consectetur
+      velit. Cras eget nibh est, eu imperdiet mauris. Nulla quis justo urna. Sed eu
+      rutrum mauris. Integer aliquet nulla sit amet ante mollis pellentesque.
+    </p>
+  </body>
+</html>
