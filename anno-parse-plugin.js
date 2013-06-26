@@ -3,8 +3,6 @@
  *
  * Note: the plugin requires jQuery to be linked into the host page.
  *
- * THIS PLUGIN IS FOR DEMO PURPOSES ONLY - DON'T USE IN A PRODUCTION
- * ENVIRONMENT.
  */
 
 
@@ -13,6 +11,7 @@ annotorious.plugin.Parse = function(opt_config_options) {
   this._APP_ID = opt_config_options['app_id'];
   this._JS_KEY = opt_config_options['js_key'];
   this._DEBUG =  opt_config_options['debug'] || false;
+  this._context = opt_config_options['context'] || window.location.href.split('#')[0].split('index.html')[0] + "#";
 
   /** @private **/
   this._collection = null;
@@ -27,8 +26,10 @@ annotorious.plugin.Parse.prototype.initPlugin = function(anno) {
   Parse.initialize(this._APP_ID, this._JS_KEY);
 
   var Annotation = Parse.Object.extend("Annotation");
+
   var AnnotationCollection = Parse.Collection.extend({
-    model: Annotation
+    model: Annotation,
+    query: (new Parse.Query(Annotation)).equalTo("context", self._context)
   });
   this._collection = new AnnotationCollection();
 
@@ -63,6 +64,7 @@ annotorious.plugin.Parse.prototype._newLoadIndicator = function() {
   outerDIV.appendChild(innerDIV);
   return outerDIV;
 };
+
 
 /**
  * @private
