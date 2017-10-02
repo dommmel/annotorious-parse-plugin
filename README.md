@@ -1,8 +1,8 @@
 # Annotorious Parse.com Plugin
 
-A simple [Annotorious](http://github.com/annotorious/annotorious) plugin that stores annotations on [Parse.com](http://parse.com/).
+A simple [Annotorious](https://github.com/annotorious/annotorious) plugin that stores annotations on [Parse](http://parseplatform.org).
 
-This plugin is based on the [annotorious-elasticsearch-plugin](https://github.com/annotorious/annotorious-elasticsearch-plugin) and is licensed under the [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
+This plugin is based on the [annotorious-elasticsearch-plugin](https://github.com/annotorious/annotorious-elasticsearch-plugin) and is licensed under the [WTFPL](https://en.wikipedia.org/wiki/WTFPL).
 
 ## Using this Plugin
 
@@ -19,8 +19,8 @@ Copy the files to your server/Webspace and set it up with your page as described
     ....
       <head>
         <!-- Import main Annotorious script and CSS -->
-        <link rel="stylesheet" href="http://annotorious.github.com/latest/annotorious.css" type="text/css" />
-        <script src="http://annotorious.github.com/latest/annotorious.min.js"></script>
+        <link rel="stylesheet" href="https://annotorious.github.com/latest/annotorious.css" type="text/css" />
+        <script src="https://annotorious.github.com/latest/annotorious.min.js"></script>
         
         <!-- Import jQuery - the plugin depends on it! -->
          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -41,6 +41,6 @@ Copy the files to your server/Webspace and set it up with your page as described
       <head>
     ....
 
-## [Live Demo](http://dommmel.github.io/annotorious-parse-plugin)
+## [Live Demo](https://dommmel.github.io/annotorious-parse-plugin)
 
     
