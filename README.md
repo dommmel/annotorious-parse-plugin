@@ -26,7 +26,7 @@ Copy the files to your server/Webspace and set it up with your page as described
          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
         <!-- Import Parse's javascript sdk - the plugin depends on it! -->
-        <script src="http://www.parsecdn.com/js/parse-1.2.8.min.js"></script>
+        <script src="https://unpkg.com/parse@1.10.0/dist/parse.min.js"></script>
         
         <!-- Import the css styles -->
         <link rel="stylesheet" href="anno-parse-plugin.css" type="text/css" /> 
